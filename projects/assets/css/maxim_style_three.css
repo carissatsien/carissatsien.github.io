@@ -1,0 +1,69 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#background{
+    background-color:
+}
+
+
+.row {
+    margin: 10px;
+    padding: 50px;
+}
+
+p {
+    font-size: 54px;
+    color: ghostwhite;
+    font-family: "Arial", sans-serif;
+    background-color: transparent;
+    text-align: center;
+}
+
+span {
+     display: inline-block;
+ }
+
+#float {
+    animation-name: float;
+    animation-iteration-count: infinite;
+    animation-duration: .2s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    justify-content: center;
+}
+
+@keyframes float {
+     0% {
+            transform: rotate3d(50, -10, -10, 15deg)
+    }
+    100% {
+            transform: rotate3d(50, 10, 10, 15deg)
+    }
+}
+
+#boo {
+    animation: boo .2s ease-in-out alternate infinite;
+    background-color: transparent;
+}
+
+@keyframes boo {
+    from {
+        transform: scale(1.0);
+        color: ghostwhite;
+    }
+    to {
+        transform: scale(1.2);
+        color: red;
+    }
+}
