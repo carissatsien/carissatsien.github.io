@@ -1,0 +1,69 @@
+html{
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: lightgray;
+}
+
+#image{
+    display:block;
+    width:300px;
+}
+
+/*Write new CSS*/
+
+.container{
+    display:inline-block;
+}
+
+.red{
+    background-color:indianred;
+    width:300px;
+    height:25px;
+}
+
+.blue{
+    background-color:midnightblue;
+    width:300px;
+    height:25px;
+}
+
+.gold{
+    background-color:darkgoldenrod;
+    display:inline-block;
+    height:275px;
+    width:40px;
+    margin-left: -4px;
+}
+
+.crimson{
+    background-color:darkred;
+    display:inline-block;
+    height: 275px;
+    width:45px;
+    margin-left: -4px;
+}
+
+#bluehalf{
+    height:15px;
+    display:inline-block;
+}
+
+#goldcorner{
+   
+    display:inline-block;
+}
+
+#blackwide{
+    width:60px;
+    height:275px;
+    display:inline-block;
+}
+
+#long{
+    width:25px;
+    height:275px;
+    display:inline-block;
+}
