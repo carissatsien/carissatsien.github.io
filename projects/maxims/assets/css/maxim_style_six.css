@@ -1,0 +1,46 @@
+* {
+    padding: 0px;
+    margin: 20px;
+    background-color: #3E7CB4;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#background{
+    animation-name: ambient;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+}
+
+.row {
+    margin: 10px;
+    padding: 25px;
+    display: inline-block;
+}
+
+p {
+    font-size: 48px;
+    color: white;
+    font-family: "Georgia", sans-serif;
+    background-color: transparent;
+    text-align: center;
+}
+
+p2 {
+    font-size: 48px;
+    color: palevioletred;
+    font-family: "Georgia", sans-serif;
+    background-color: transparent;
+    text-align: center;
+}
+
+span {
+     display: inline-block;
+ }

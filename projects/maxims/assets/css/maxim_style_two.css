@@ -1,0 +1,112 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    background-color: skyblue;
+}
+
+body {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.row {
+    margin: 10px;
+    padding: 0px;
+    text-align: center;
+}
+
+img:hover {
+    background-image: url();
+    
+}
+
+#float {
+    animation-name: float;
+    animation-iteration-count: infinite;
+    animation-duration: .2s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0vh)
+    }
+    40%{
+        transform: translateY(.1vh)
+    }
+    100% {
+        transform: translateY(1vh)
+    }
+}
+
+.pigeon{
+    animation-name: pigeon;
+    animation-iteration-count: infinite;
+}
+
+.pigeon:hover {
+    color: lightseagreen;
+    animation: pigeon;
+}
+
+@keyframes pigeon {
+   background: url(../imgs/pigeon.png) 500px;
+    
+}
+
+p {
+    font-size: 40px;
+    color: black;
+    font-family: "Gill Sans", sans-serif;
+}
+
+span {
+     display: inline-block;
+ }
+
+#fly {
+    color: ghostwhite;
+    font-size: 54px;
+    animation-name: fly;
+    animation-iteration-count: infinite;
+    animation-delay: .1s;
+    animation-duration: .3s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    
+    justify-content: center;
+}
+
+#fly:hover {
+    animation-name: away;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    transition: all linear;
+}
+
+@keyframes fly {
+    0% {
+            transform: rotate(5deg);
+    }
+    100% {
+            transform: rotate(-5deg);
+        }
+}
+
+@keyframes away {
+    0% {
+        transform: translateY(0vh);
+        transition: all 1s linear;
+    }
+    100% {
+        transform: translateY(-120vh);
+        transition: all 1s linear;
+    }
+}

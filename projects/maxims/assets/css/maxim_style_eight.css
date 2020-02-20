@@ -1,0 +1,78 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#background{
+    animation-name: ambient;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+}
+
+@keyframes ambient {
+    0% {
+        
+    }
+}
+
+.row {
+    margin: 10px;
+    padding: 25px;
+    display: inline-block;
+}
+
+p {
+    font-size: 54px;
+    color: ghostwhite;
+    font-family: "Helvetica", serif;
+    background-color: transparent;
+    text-align: center;
+}
+
+span {
+     display: inline-block;
+ }
+
+#float {
+    animation-name: float;
+    animation-iteration-count: infinite;
+    animation-duration: .3s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    justify-content: center;
+}
+
+@keyframes float {
+     0% {
+            transform: rotate3d(50, -10, -10, 10deg)
+    }
+    100% {
+            transform: rotate3d(50, 10, 10, 10deg)
+    }
+}
+
+#boo {
+    animation: boo .2s ease-in-out alternate infinite;
+    background-color: transparent;
+}
+
+@keyframes boo {
+    from {
+        transform: scale(1.0);
+        color: ghostwhite;
+    }
+    to {
+        transform: scale(.9);
+        color: red;
+    }
+}

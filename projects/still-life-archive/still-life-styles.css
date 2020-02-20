@@ -1,0 +1,67 @@
+/*RESETS*/
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/*The code above resets box-sizing & margins and padding on all elements*/
+
+
+/*YOUR CSS CODE GOES BELOW*/
+
+body {
+    background-color: whitesmoke;
+    height: 100vh;
+}
+
+.flex-container {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+#link {
+    display: flex;
+    justify-content: center;
+}
+
+/*Link design - feel free to change*/
+
+a {
+    font-family: "Georgia", serif;
+    color: black;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightskyblue;
+}
+
+img {
+    height: 20vh;
+}
+
+.links {
+    margin: 0px;
+    display: flex;
+    align-content: center;
+}
+
