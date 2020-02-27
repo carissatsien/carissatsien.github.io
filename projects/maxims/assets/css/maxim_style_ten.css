@@ -12,6 +12,27 @@ body {
     justify-content: center;
 }
 
+a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: powderblue;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: static;
+}
+
+div {
+    height: 100%;
+    width: 800px;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #background{
     animation-name: ambient;
     animation-iteration-count: infinite;
@@ -19,24 +40,25 @@ body {
     animation-direction: alternate;
 }
 
-@keyframes ambient {
-    0% {
-        
-    }
-}
-
 .row {
-    margin: 10px;
-    padding: 25px;
     display: inline-block;
 }
 
 p {
-    font-size: 54px;
+    font-size: 24px;
     color: ghostwhite;
-    font-family: "Rockwell", sans-serif;
+    padding-top: 40vh;
+    font-family: "Georgia", serif;
     background-color: transparent;
     text-align: center;
+}
+
+.emphasis {
+    font-style: italic;
+}
+
+.color {
+    color: red;
 }
 
 span {
@@ -61,18 +83,56 @@ span {
     }
 }
 
-#boo {
-    animation: boo .2s ease-in-out alternate infinite;
-    background-color: transparent;
+
+.shadow {
+    animation: text-shadow 1s linear infinite alternate;
+    display: block;
+    z-index: 1;
 }
 
-@keyframes boo {
-    from {
-        transform: scale(1.0);
-        color: ghostwhite;
+@keyframes text-shadow {
+    0% {
+        text-shadow:
+            0 0 0 #0c2ffb,
+            0 0 0 #2cfcfd,
+            0 0 0 #fb203b,
+            0 0 0 #fefc4b;
     }
-    to {
-        transform: scale(.9);
-        color: red;
+
+    20% {
+        text-shadow:
+            0 12px 0 #2cfcfd,
+            0 -5px 0 #fb203b,
+            0 -6px 10 #fefc4b;
     }
+
+    40% {
+        text-shadow:
+            0 -12px 0 #2cfcfd,
+            0 8px 10 #fb203b,
+            0 5px 0 #fefc4b;
+    }
+
+    60% {
+        text-shadow:
+            0 2px 0 #2cfcfd,
+            0 -2px 0 #fb203b,
+            0 -2px 0 #fefc4b;
+    }
+
+    80% {
+        text-shadow:
+            0 0 0 #2cfcfd,
+            0 0 0 #fb203b,
+            0 0 0 #fefc4b;
+    }
+}
+
+img {
+    margin-top: 30px;
+    margin-left: 80px;
+    padding: 0px;
+    align-content: center;
+    position: absolute;
+    z-index: 0;
 }

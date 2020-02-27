@@ -1,46 +1,122 @@
 * {
     padding: 0px;
-    margin: 20px;
-    background-color: #3E7CB4;
+    margin: 0px;
 }
 
 body {
-    height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #34A9FA, #1D7EC1, #123D5B, black);
+    background-size: 200% 200%;
+    animation: water 10s linear 3s forwards;
+    animation animation-iteration-count: 1;
+}
+
+@keyframes water {
+    0% {
+        background-position: 50% 0%
+    }
+
+    50% {
+        background-position: 50% 100%
+    }
+
+    100% {
+        background-position: 50% 100%
+    }
+}
+
+a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: orange;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: static;
+}
+
+div {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#background{
-    animation-name: ambient;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-    animation-direction: alternate;
-}
-
 .row {
-    margin: 10px;
-    padding: 25px;
     display: inline-block;
 }
 
 p {
     font-size: 48px;
-    color: white;
-    font-family: "Georgia", sans-serif;
+    color: #E6EDF0;
+    font-family: "Anton", sans-serif;
     background-color: transparent;
     text-align: center;
 }
 
-p2 {
-    font-size: 48px;
-    color: palevioletred;
-    font-family: "Georgia", sans-serif;
-    background-color: transparent;
-    text-align: center;
+.week {
+    font-style: italic;
+    font-family: "Squada One", sans-serif;
+    color: gold;
+    opacity: 0;
+    display: inline-block;
+    font-family: "Anton", ;
+    animation: week .5s ease forwards;
+    animation-iteration-count: 1;
+    animation-delay: 8s;
 }
 
-span {
-     display: inline-block;
- }
+@keyframes week {
+    0% {
+        opacity: 0;
+        font-size: 72px;
+    }
+    80% {
+        opacity: 1;
+        font-size: 130px;
+    }
+    100% {
+        opacity: 1;
+        font-size: 110px;
+    }
+}
+
+.red {
+    animation: flash .3s linear infinite alternate;
+}
+
+@keyframes flash {
+    from {
+        color: darkred;
+    }
+    to {
+        color: gold;
+    }
+}
+
+
+#float {
+    animation-name: float;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    justify-content: center;
+}
+
+@keyframes float {
+     0% {
+            transform: rotate3d(50, -10, -10, 5deg);
+    }
+    100% {
+            transform: rotate3d(50, 10, 10, 5deg);
+    }
+}

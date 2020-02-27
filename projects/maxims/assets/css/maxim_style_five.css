@@ -1,11 +1,45 @@
 * {
-    padding: 30px;
+    padding: 0px;
     margin: 0px;
-    background-color: darkred;
 }
 
 body {
-    height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image:
+        repeating-linear-gradient(45deg,
+            darkred,
+            darkred 60px,
+            #EEEAEA 60px,
+            #EEEAEA 120px);
+    background-size: 400% 200%;
+    animation: barberpole 50s linear infinite;
+}
+
+@keyframes barberpole {
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    background-color: white;
+}
+
+div {
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,19 +47,67 @@ body {
 }
 
 .row {
-    margin: 10px;
-    padding: 25px;
     display: inline-block;
+    font-family: 'Abril Fatface', ;
 }
 
 p {
-    font-size: 54px;
-    color: white;
-    font-family: "Arial", sans-serif;
-    background-color: transparent;
+    font-size: 64px;
+    width: 60vw;
     text-align: center;
+    color: #fff;
+    font-family: 'Abril Fatface', saf;
+    text-shadow: 1px 3px 10px black;
+    animation: reverse 20s linear infinite;
+}
+
+@keyframes reverse {
+    0% {
+        color: #EEEAEA;
+        text-shadow: 2px 8px darkred;
+    }
+
+    100% {
+        color: darkred;
+        text-shadow: 2px 8px #EEEAEA;
+    }
 }
 
 span {
-     display: inline-block;
- }
+    display: inline-block;
+}
+
+#bounce {
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: .3s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    justify-content: center;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0vh);
+    }
+
+    100% {
+        transform: translateY(-3vh);
+    }
+}
+
+.squash {
+    animation: squash .1s ease-in-out alternate infinite;
+    background-color: transparent;
+}
+
+@keyframes squash {
+    from {
+        transform: scale(1.0);
+    }
+
+    to {
+        animation-delay: .3s;
+        transform: scale(.9);
+    }
+}

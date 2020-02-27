@@ -1,28 +1,46 @@
 * {
     padding: 0px;
     margin: 0px;
-    background-color: skyblue;
 }
 
 body {
-    height: 50%;
-    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    background: ghostwhite;
+}
+
+a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: orange;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: static;
+}
+
+div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .row {
     margin: 10px;
-    padding: 0px;
+    padding: 20px;
     text-align: center;
 }
 
 img:hover {
     background-image: url();
-    
+
 }
 
 #float {
@@ -35,78 +53,78 @@ img:hover {
 
 @keyframes float {
     0% {
-        transform: translateY(0vh)
+        transform: translateY(0vh);
     }
-    40%{
-        transform: translateY(.1vh)
+
+    30% {
+        transform: translateY(.3vh);
     }
+
     100% {
-        transform: translateY(1vh)
+        transform: translateY(1vh);
     }
 }
 
-.pigeon{
+.pigeon {
+    color: lightseagreen;
     animation-name: pigeon;
     animation-iteration-count: infinite;
 }
 
 .pigeon:hover {
-    color: lightseagreen;
     animation: pigeon;
 }
 
 @keyframes pigeon {
-   background: url(../imgs/pigeon.png) 500px;
-    
+    background: url(../imgs/pigeon.png) 500px;
+
 }
 
 p {
-    font-size: 40px;
+    font-size: 50px;
     color: black;
-    font-family: "Gill Sans", sans-serif;
+    font-family: "Rockwell", sans-serif;
+    background-color: none;
 }
 
 span {
-     display: inline-block;
- }
+    display: inline-block;
+}
 
 #fly {
-    color: ghostwhite;
+    color: lightseagreen;
     font-size: 54px;
     animation-name: fly;
     animation-iteration-count: infinite;
-    animation-delay: .1s;
     animation-duration: .3s;
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
-    
     justify-content: center;
-}
-
-#fly:hover {
-    animation-name: away;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    transition: all linear;
 }
 
 @keyframes fly {
     0% {
-            transform: rotate(5deg);
+        transform: rotate(5deg);
     }
+
     100% {
-            transform: rotate(-5deg);
-        }
+        transform: rotate(-5deg);
+    }
+}
+
+#fly:hover {
+    animation-name: away;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    transition: all 2s alternate;
 }
 
 @keyframes away {
     0% {
-        transform: translateY(0vh);
-        transition: all 1s linear;
+        transform: translateY(0px);
     }
+    
     100% {
-        transform: translateY(-120vh);
-        transition: all 1s linear;
+        transform: translateY(-1000px);
     }
 }

@@ -2,7 +2,6 @@ body {
     padding: 0px;
     padding-bottom: 20px;
     margin: 0px;
-    background-color: ;
 }
 
 /* Site Menus*/
@@ -12,18 +11,17 @@ body {
 
 /* Menu Background*/
 .nav {
-    overflow: hidden;
     background-color: black;
     padding: 20px 20px 5px;
     padding-bottom: 5px;
-    margin:0px;
+    margin: 0px;
     position: fixed;
     width: 100%;
 }
 
 /* The navigation menu links */
 .nav a {
-    padding: 0px 20px 0px 0px;
+    padding: 0px 0px 0px 20px;
     font-size: 24px;
     text-decoration: none;
     color: none;
@@ -56,7 +54,7 @@ h1 {
     color: black;
     box-shadow: 0px 2px;
     letter-spacing: 2px;
-    margin: 20px 0px 10px 0px;
+    margin: 20px 0px 12px 0px;
 }
 
 a {
@@ -88,32 +86,44 @@ h2 {
     margin-top: 0px;
     margin-bottom: 3px;
     letter-spacing: .3px;
+    padding-left: 20px;
 }
 
 p {
     font-size: 18px;
     font-family: 'Arial', sans-serif;
     letter-spacing: .3px;
-    margin: 0px 0px 20px;
+    margin: 0px 0px 0px;
+    padding-left: 20px;
 }
 
 ul {
     margin: 0px 0px 10px 0px;
-    padding-left: 20px;
+    padding-left: 30px;
 }
 
 .flex-container {
     height: 100%;
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: center;
-    margin-top: 20px;
+    padding: 40px;
+}
+
+.flex-container-index {
+    height: 100%;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
 }
 
 .about {
-    padding-left: 460px;
+    padding-left: 450px;
     padding-top: 30px;
 }
 
@@ -121,8 +131,13 @@ img {
     margin: 10px;
 }
 
+.desc {
+    padding-left: 36vh;
+    padding-right: 36vh;
+}
+
 .border {
-    box-shadow: 8px 10px 38px 0px;
+    box-shadow: 8px 10px 20px 0px;
 }
 
 .portrait {
