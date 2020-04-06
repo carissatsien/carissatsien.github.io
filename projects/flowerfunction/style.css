@@ -1,0 +1,17 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+  margin: 100px;
+  position: fixed;
+  top:0;
+  left:0;
+}
+
+h1 {
+  margin: 100px;
+  color: white;
+  z-index: 1;
+}

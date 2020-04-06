@@ -71,7 +71,7 @@ p {
     font-family: "Anton", ;
     animation: week .5s ease forwards;
     animation-iteration-count: 1;
-    animation-delay: 8s;
+    animation-delay: 6s;
 }
 
 @keyframes week {
