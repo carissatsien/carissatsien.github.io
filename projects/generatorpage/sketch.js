@@ -22,7 +22,7 @@ function setup() {
 
   checkbox = createCheckbox('Center Line', true);
   checkbox.changed(makeLine);
-  checkbox.position(menuXpos - 10, 5);
+  checkbox.position(menuXpos - 10, 520);
 
   button = createButton('Randomize Colors');
   button.position(menuXpos - 10, 460);
@@ -41,11 +41,11 @@ function setup() {
   // colorPick2.position(200, windowHeight - 30);
 
   bgcolorPickR = createSlider(0, 255, 255);
-  bgcolorPickR.position(menuXpos, 60);
+  bgcolorPickR.position(menuXpos, 40);
   bgcolorPickG = createSlider(0, 255, 255);
-  bgcolorPickG.position(menuXpos, 90);
+  bgcolorPickG.position(menuXpos, 70);
   bgcolorPickB = createSlider(0, 255, 255);
-  bgcolorPickB.position(menuXpos, 120);
+  bgcolorPickB.position(menuXpos, 100);
 
   radiusSlider = createSlider(40, 300, 120);
   radiusSlider.position(menuXpos, 180);
@@ -117,13 +117,13 @@ function draw() {
 
   for (let i = 0; i < shape.length; i++) {
     shape[i].radiusChange(radiusSlider.value());
-    // shape[i].move();
+    // shape[i].move(); //bounce off the edges
     shape[i].show();
   }
 
   for (let i = 0; i < shapeC.length; i++) {
     shapeC[i].radiusChange(radiusColoredSlider.value());
-    // shapeC[i].move();
+    // shapeC[i].move(); //bounce off the edges
     shapeC[i].show();
   }
 
@@ -206,7 +206,7 @@ class Shape {
     let xoff = 0;
     beginShape();
     for (let a = 0; a < TWO_PI; a += 0.1) {
-      let offset = map(noise(xoff, this.yoff), 0, 1, -25, 25);
+      let offset = map(noise(xoff, this.yoff), 0, 1, -70, 25);
 
       let r = this.radius + offset;
       let x = r * cos(a);
@@ -225,7 +225,7 @@ class Shape {
     xoff = 0;
 
     for (let a = 0; a < TWO_PI; a += 0.1) {
-      let offset = map(noise(xoff, this.yoff), 0, 1, -25, 25);
+      let offset = map(noise(xoff, this.yoff), 0, 1, -70, 25);
       let r = this.radius + offset;
       let x = r * cos(a);
       let y = r * sin(a);

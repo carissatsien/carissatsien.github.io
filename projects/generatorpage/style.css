@@ -12,31 +12,41 @@ div {
 }
 
 #bgcolor {
-  padding-top: 20px;
-  padding-bottom: 50px;
+  padding-top:10px;
+  padding-bottom: 0px;
   
 }
 
 .shape {
-  padding-top: 15px;
-  padding-bottom: 90px; 
-  
+  padding-top: 0px;
+  padding-bottom: 0px; 
 }
 
-#side1 {
-  display: inline-block;
+.side {
+  display: block;
   position: relative;
   padding-top: 0px;
   padding-bottom: 0px;
   padding-right: 0px;
 }
 
-p {
- padding-left: 45px;
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 10%;
 }
 
-h3 {
-  padding-left: 35px;
- margin-bottom: -10px;
-  font-size: 12px;
+td, th {
+  border: none;
+  text-align: left;
+  padding: 7px;
+}
+
+p {
+  display:inline-flex;
+  position:relative;
+  margin-top: 10px;
+    margin-bottom: 4px;
+padding-top: 0px;
+ padding-left: 45px;
 }
