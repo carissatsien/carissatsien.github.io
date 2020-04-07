@@ -22,14 +22,18 @@ function setup() {
 
   checkbox = createCheckbox('Center Line', true);
   checkbox.changed(makeLine);
-  checkbox.position(menuXpos - 10, 520);
+  checkbox.position(menuXpos - 10, 550);
 
   button = createButton('Randomize Colors');
   button.position(menuXpos - 10, 460);
   button.mousePressed(randomColor);
   
-  buttonRe = createButton('Rearrange Shapes');
-  buttonRe.position(menuXpos - 10, 490);
+  button = createButton('Reset Colors');
+  button.position(menuXpos - 10, 490);
+  button.mousePressed(resetColor);
+  
+  buttonRe = createButton('New Shapes');
+  buttonRe.position(menuXpos - 10, 520);
   buttonRe.mousePressed(reDo);
 
   // checkbox = createCheckbox('Pause', false);
@@ -97,6 +101,21 @@ function randomColor() {
     smallshapeR.value(random(255));
     smallshapeB.value(random(255));
     smallshapeG.value(random(255));
+}
+
+function resetColor() {
+    // colorPick =
+    bgcolorPickR.value(255);
+    bgcolorPickG.value(255);
+    bgcolorPickB.value(255);
+
+    largeshapeR.value(0);
+    largeshapeB.value(0);
+    largeshapeG.value(0);
+
+    smallshapeR.value(200);
+    smallshapeB.value(0);
+    smallshapeG.value(0);
 }
 
 function makeLine() {
@@ -206,7 +225,7 @@ class Shape {
     let xoff = 0;
     beginShape();
     for (let a = 0; a < TWO_PI; a += 0.1) {
-      let offset = map(noise(xoff, this.yoff), 0, 1, -70, 25);
+      let offset = map(noise(xoff, this.yoff), 0, 1, -90, 50);
 
       let r = this.radius + offset;
       let x = r * cos(a);
@@ -225,7 +244,7 @@ class Shape {
     xoff = 0;
 
     for (let a = 0; a < TWO_PI; a += 0.1) {
-      let offset = map(noise(xoff, this.yoff), 0, 1, -70, 25);
+      let offset = map(noise(xoff, this.yoff), 0, 1, -90, 50);
       let r = this.radius + offset;
       let x = r * cos(a);
       let y = r * sin(a);
