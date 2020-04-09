@@ -39,7 +39,7 @@ table {
   font-family: arial, sans-serif;
   font-size: 14px;
   border-collapse: collapse;
-  width: 3%;
+  width: 45px;
 }
 
 td,
@@ -55,9 +55,9 @@ h1 {
   display: inline-flex;
   position: relative;
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   padding-top: 12px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 /* 
 p {
