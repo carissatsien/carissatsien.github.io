@@ -22,13 +22,17 @@ function setup() {
   canvas.position(0, 0);
   // noLoop();
 
-  frameRate(30);
+  frameRate(60);
 
   let menuXpos = windowWidth - width - 150;
 
-  checkbox = createCheckbox('', true);
+  checkbox = createCheckbox('',true);
   checkbox.changed(makeLine);
   checkbox.position(menuXpos - 10, 590);
+  
+  checkbox = createCheckbox('',false);
+  checkbox.position(menuXpos - 10, 610);
+  checkbox.changed(pauseDraw);
 
   button = createButton('Randomize Colors');
   button.position(menuXpos - 10, 500);
@@ -41,10 +45,6 @@ function setup() {
   buttonRe = createButton('New Shapes');
   buttonRe.position(menuXpos - 10, 560);
   buttonRe.mousePressed(reDo);
-
-  checkbox = createCheckbox('', false);
-  checkbox.position(menuXpos - 10, 610);
-  checkbox.changed(pauseDraw);
 
   // colorPick = createColorPicker('black');
   // colorPick.position(0, windowHeight - 30);
@@ -115,7 +115,7 @@ function pauseDraw() {
     frameRate(0);
     p = false;
   } else {
-    frameRate(30);
+    frameRate(60);
     p = true;
   }
 }
@@ -246,9 +246,9 @@ class Shape {
     //elements for movement!
     this.xDirection = 1;
     this.yDirection = 1;
-    this.xAcc = random(0.01, 0.5);
+    this.xAcc = random(0.01, 1);
     this.xAngle = random(-180, 180);
-    this.yAcc = random(0.01, 0.5);
+    this.yAcc = random(0.01, 1);
     this.yAngle = random(-180, 180);
   }
 
@@ -258,15 +258,17 @@ class Shape {
 
   move() {
 
+    // map(value, start1, stop1, start2, stop2, [withinBounds])
+    let n = width/3;
     //for bouncing off the walls
-    if (this.x > width || this.x < 0) {
+    if (this.x > width - n|| this.x < n) {
       this.xDirection = this.xDirection * -1;
     }
-    if (this.y > height || this.y < 0) {
+    let m = height/4
+    if (this.y > height - m || this.y < m) {
       this.yDirection = this.yDirection * -1;
     }
-
-
+    
     angleMode(DEGREES); //change angle mode here to DEGREES
 
     this.x = this.x + (this.xDirection * this.xAcc * cos(this.xAngle));
@@ -318,7 +320,7 @@ class Shape {
 class secondShape {
 
   constructor(x, y, radius) {
-    this.x = x;
+    this.x = x + width/4;
     this.y = y / 2 + height / 4;
     this.radius = radius;
     this.yoff = 0.0;
@@ -336,10 +338,13 @@ class secondShape {
   }
 
   move() {
-    if (this.x > width - 500 || this.x < 0) {
+    let n = width/3;
+    //for bouncing off the walls
+    if (this.x > width - n|| this.x < n) {
       this.xDirection = this.xDirection * -1;
     }
-    if (this.y > height - 500 || this.y < 0) {
+    let m = height/4
+    if (this.y > height - m || this.y < m) {
       this.yDirection = this.yDirection * -1;
     }
 
@@ -353,7 +358,7 @@ class secondShape {
   show() {
     push();
     angleMode(RADIANS);
-    translate(this.x, this.y);
+    translate(this.x/2, this.y);
     fill(smallshapeR.value(), smallshapeG.value(), smallshapeB.value());
     noStroke();
     let xoff = 0;
@@ -370,7 +375,7 @@ class secondShape {
     pop();
 
     push();
-    translate(-(this.x) + width, this.y);
+    translate(-(this.x/2) + width, this.y);
     fill(smallshapeR.value(), smallshapeG.value(), smallshapeB.value());
     noStroke();
     xoff = 0
