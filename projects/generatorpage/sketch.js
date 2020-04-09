@@ -26,7 +26,7 @@ function setup() {
 
   let menuXpos = windowWidth - width - 150;
 
-  checkbox = createCheckbox('Center Line', true);
+  checkbox = createCheckbox('', true);
   checkbox.changed(makeLine);
   checkbox.position(menuXpos - 10, 590);
 
@@ -42,7 +42,7 @@ function setup() {
   buttonRe.position(menuXpos - 10, 560);
   buttonRe.mousePressed(reDo);
 
-  checkbox = createCheckbox('Pause', false);
+  checkbox = createCheckbox('', false);
   checkbox.position(menuXpos - 10, 610);
   checkbox.changed(pauseDraw);
 
