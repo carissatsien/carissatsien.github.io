@@ -1,7 +1,9 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
+
 canvas {
   display: block;
   padding-left: 200px;
@@ -9,17 +11,20 @@ canvas {
 
 div {
   display: block;
+  padding-bottom: 8px;
 }
 
 #bgcolor {
-  padding-top:10px;
+  padding-top: 10px;
   padding-bottom: 0px;
-  
+
 }
 
 .shape {
-  padding-top: 0px;
-  padding-bottom: 0px; 
+  padding-top:0px;
+  padding-bottom: 16px;
+  margin: 0px;
+  border: 0px solid black;
 }
 
 .side {
@@ -32,21 +37,35 @@ div {
 
 table {
   font-family: arial, sans-serif;
+  font-size: 14px;
   border-collapse: collapse;
-  width: 10%;
+  width: 3%;
 }
 
-td, th {
-  border: none;
-  text-align: left;
-  padding: 7px;
+td,
+th {
+  border: 0px solid black;
+  text-align: right;
+  padding-bottom: 15px;
 }
 
+h1 {
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  display: inline-flex;
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-top: 12px;
+  padding-left: 5px;
+}
+/* 
 p {
-  display:inline-flex;
-  position:relative;
+  font-family: arial, sans-serif;
+  display: inline-flex;
+  position: relative;
   margin-top: 10px;
-    margin-bottom: 4px;
-padding-top: 0px;
- padding-left: 45px;
-}
+  margin-bottom: 4px;
+  padding-top: 10px;
+  padding-left: 5px;
+} */
