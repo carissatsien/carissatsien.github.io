@@ -71,14 +71,14 @@ th {
 }
 
 h1 {
-  font-family: arial, sans-serif;
-  font-size: 18px;
-  display: inline-flex;
-  position: relative;
-  margin-top: 0px;
-  margin-bottom: 4px;
-  padding-top: 12px;
-  padding-left: 10px;
+    font-family: arial, sans-serif;
+    font-size: 17px;
+    display: inline-flex;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 6px;
+    padding-top: 12px;
+    padding-left: 10px;
 }
 /* 
 p {
