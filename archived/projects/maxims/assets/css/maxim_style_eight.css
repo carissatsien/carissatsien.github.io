@@ -1,0 +1,124 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #024794;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: static;
+}
+
+p {
+    color: ghostwhite;
+    font-family: "Fira Mono", sans-serif;
+    text-align: center;
+    background-color: black;
+}
+
+
+div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    width: 90%;
+}
+
+.flow {
+    animation: text-shadow .5s linear infinite alternate;
+    font-size: 56px;
+    text-align: center;
+    padding-top: 30vh;
+    background-color: black;
+    z-index: 1;
+}
+
+.row:hover .flow {
+    display: none;
+}
+
+
+.wait {
+    display: block;
+    font-size: 24px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+    z-index: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+@keyframes text-shadow {
+    0% {
+        transform: translateY(0);
+        text-shadow:
+            0 0 0 #0c2ffb,
+            0 0 0 #2cfcfd,
+            0 0 0 #fb203b,
+            0 0 0 #fefc4b;
+    }
+
+    20% {
+        color: azure;
+        transform: translateX(-1px);
+        text-shadow:
+            0 12px 0 #2cfcfd,
+            0 -5px 0 #fb203b,
+            0 -6px 10 #fefc4b;
+    }
+
+    40% {
+        transform: translateY(1px);
+        text-shadow:
+            0 -12px 0 #2cfcfd,
+            0 8px 10 #fb203b,
+            0 5px 0 #fefc4b;
+    }
+
+    60% {
+        transform: translateX(1px);
+        text-shadow:
+            0 2px 0 #2cfcfd,
+            0 -2px 0 #fb203b,
+            0 -2px 0 #fefc4b;
+    }
+
+    80% {
+        transform: translateY(-1px);
+        text-shadow:
+            0 0 0 #2cfcfd,
+            0 0 0 #fb203b,
+            0 0 0 #fefc4b;
+        opacity: .9;
+    }
+}
+
+
+span {
+    display: inline-block;
+}

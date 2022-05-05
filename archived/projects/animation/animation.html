@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>CSS Simple Hover Effects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="animation-styles.css">
+</head>
+
+<body>
+    <h1>Basic :hovers and transitions</h1>
+
+    <p>1. In order to have a <span>:hover</span> transition applied, you need to write two separate lines of code inside your CSS.</p>
+
+    <p>2. The first is to apply a <span> :hover</span> on the element or class</p>
+
+    <p class="text-change">3. For example, when you hover over this paragraph the background-color changes. Notice that this change here is instant and there's no delay.</p>
+
+    <p class="slow">4. To have a change in the duration of how it appears, you need to apply a <span>transition</span> property inside the css of the class you want to affect. This is written as <br><span class="transition"> transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];</span><br> In this example since there are multiple items changing, <span>all</span> is used for the transition property</p>
+
+    <p class="pos-change">5. In order to have the position change, you would change the x or y position using <span>transform:translateX(____)</span></p>
+
+    <div class="bd">
+        <p class="op-change">6. You can also use opacity to have elements fade in or out slowly using opacity</p>
+    </div>
+
+    <p>Tasks</p>
+    <ul>
+        <li>Add a transition duration of 3 seconds to the 3rd paragraph</li>
+        <li>Add a :hover and transition to affect all of the spans to reverse the color - black to pink</li>
+        <li>Have the 5th paragraph move vertically</li>
+        <li>Fade out the border around the 6th paragraph when it is hovered</li>
+        
+
+    </ul>
+</body>
+
+</html>

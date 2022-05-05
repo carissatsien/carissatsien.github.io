@@ -1,0 +1,175 @@
+body {
+    background: #cccccc;
+}
+
+/* do NOT modify the canvas */
+
+.canvas {
+    width: 900px;
+    height: 556px;
+    margin: 100px auto;
+    background: beige;
+    position: relative;
+}
+
+/* modify the assets below */
+
+#triangle {
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 90px solid transparent;
+    border-bottom: 170px solid #C6925D;
+    position: absolute;
+    top: 250px;
+    left: 310px;
+}
+
+#fold {
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 136px solid #FFF810;
+    position: absolute;
+    top: 420px;
+    left: 0px;
+}
+
+#triangle2 {
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 60px solid transparent;
+    border-top: 60px solid transparent;
+    border-bottom: 130px solid #EEEAD8;
+    position: absolute;
+    top: 230px;
+    left: 380px;
+}
+
+#triangle3 {
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 30px solid transparent;
+    border-bottom: 130px solid #4F3D2B;
+    position: absolute;
+    top: 260px;
+    left: 320px;
+}
+
+#book {
+    top: -100px;
+    z-index: -1;
+
+}
+
+#square {
+    width: 830px;
+    height: 136px;
+    background: #FFF800;
+    top: 420px;
+    left: 70px;
+    position: absolute;
+}
+
+#circle {
+    width: 140px;
+    height: 100px;
+    background: hotpink;
+    border-radius: 200px;
+    top: 60px;
+    left: 480px;
+    position: absolute;
+    transform: rotate(-10deg);
+}
+#circle2 {
+    width: 90px;
+    height: 60px;
+    background: goldenrod;
+    border-radius: 200px;
+    top: 94px;
+    left: 510px;
+    position: absolute;
+    transform: rotate(-10deg);
+    z-index: 1;
+}
+
+#bottle {
+    width: 80px;
+    height: 190px;
+    background: #23345F;
+    border-radius: 10px;
+    top: 230px;
+    left: 550px;
+    position: absolute;
+    z-index: 2;
+}
+
+#lid {
+    width: 80px;
+    height: 20px;
+    background: lightgray;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    top: 230px;
+    left: 550px;
+    position: absolute;
+    z-index: 3;
+}
+
+#stemleaf {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 90px solid transparent;
+    border-top: 0px solid transparent;
+    border-bottom: 30px solid darkgreen;
+    border-radius: 600px;
+    position: absolute;
+    top: 160px;
+    right: 300px;
+    z-index: 2;
+    transform: rotate(40deg)
+}
+
+#stem {
+    width: 10px;
+    height: 200px;
+    background: darkgreen;
+    border-radius: 12px;
+    top: 130px;
+    left: 570px;
+    position: absolute;
+    transform: rotate(-10deg);
+    z-index: 2;
+}
+
+#leaves {
+    width: 100px;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 0px solid transparent;
+    border-bottom: 100px solid darkgreen;
+    border-radius;
+    position: absolute;
+    top: 320px;
+    left: 60px;
+    z-index: 1;
+}
+
+#leaf {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 0px solid transparent;
+    border-bottom: 50px solid darkgreen;
+    position: absolute;
+    top: 370px;
+    left: 570px;
+    z-index: 2;
+}

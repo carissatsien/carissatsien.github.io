@@ -1,0 +1,60 @@
+body {
+    color: black;
+    padding: 10px;
+}
+
+h1 {
+    color: gold;
+    margin-bottom: -40px
+}
+
+h2 {
+    color: white;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+h3{
+    font-style: italic;
+    font-size: 40px;
+    letter-spacing: 11px;
+    color: #373737;
+}
+
+.spine {
+    width: 180px;
+    height: 490px;
+    background-color: #373737;
+    position: fixed;
+}
+
+.crossing {
+    display: inline-block;
+    padding-left: 215px;
+    padding-top: 115px;
+    position: fixed;
+}
+
+.boundaries {
+    font-size: 60px;
+    padding-left: 300px;
+    padding-top: 0px;
+}
+.history {
+    font-size: 24px;
+    padding-left: 300px;
+    padding-top: 0px;
+    letter-spacing: 19px;
+}
+
+p2 {
+    padding-bottom: 10px;
+}
+
+.date {
+    font-size: 24px;
+    padding-left: 300px;
+    padding-top: 140px;
+    margin-bottom: 10px;
+}
