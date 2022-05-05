@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Work - Carissa Tsien</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.svg"/>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#9650;</button>
+    <!--Nav Bar-->
+    <div class="nav-container">
+        <h1 class="nav">Carissa Tsien</h1>
+        <ul>
+            <a class="underline" href="index.html">Portfolio</a>
+        </ul>
+        <ul>
+            <a class="underline" href="personal.html" id="current">Personal Work</a>
+        </ul>
+        <ul>
+            <a class="underline" href="contact.html">Contact</a>
+        </ul>
+    </div>
+    
+    <!--Content-->
+    <div class="flex">
+        <div class="flex-container">
+            <div class="center personal load">
+                <a href="#1" id="1-home">
+                    <img src="img/all-mockup-03-thumb.jpg" width="100%">
+                    <div class="lightbox-target" id="1">
+                        <a href="#1-home"><img src="img/all-mockup-03.jpg"></a>
+                    </div>
+                </a>
+                <a href="#2" id="2-home">
+                    <img src="img/gen2-thumb.jpg" width="100%">
+                    <div class="lightbox-target" id="2">
+                        <a href="#2-home"><img src="img/gen2.jpg" height="100%"></a>
+                    </div>
+                </a>
+
+                <a href="#3" id="3-home">
+                    <img src="img/proof041-thumb.jpg" width="100%">
+                </a>
+                <div class="lightbox-target" id="3">
+                    <a href="#3-home"><img src="img/proof041.jpg"></a>
+                </div>
+
+                <a href="#4" id="4-home">
+                    <img src="img/week2-hw-revised-color-thumb.jpg" width="100%">
+                </a>
+                <div class="lightbox-target" id="4">
+                    <a href="#4-home"><img src="img/week2-hw-revised-color.jpg"></a>
+                </div>
+
+                <a href="#5" id="5-home">
+                    <img src="img/week5-hw1-thumb.jpg" width="100%">
+                </a>
+                <div class="lightbox-target" id="5">
+                    <a href="#5-home"><img src="img/week5-hw1.jpg"></a>
+                </div>
+
+                <a href="#6" id="6-home">
+                    <img src="img/week5-hw2-thumb.jpg" width="100%">
+                </a>
+                <div class="lightbox-target" id="6">
+                    <a href="#6-home"><img src="img/week5-hw2.jpg"></a>
+                </div>
+                
+                <a href="#7" id="7-home">
+                    <img src="img/week5-thumb.jpg" width="100%">
+                </a>
+                <div class="lightbox-target" id="7">
+                    <a href="#7-home"><img src="img/week5.jpg"></a>
+                </div>
+                
+                <a href="#8" id="8-home">
+                    <img src="img/proof033-thumb.jpg" width="100%">
+                </a>
+                <div class="lightbox-target" id="8">
+                    <a href="#8-home"><img src="img/proof033.jpg" height="100%"></a>
+                </div>
+
+                <a href="#9" id="9-home">
+                    <img src="img/multiblock007-thumb.jpg" width="100%">
+                </a>
+                <div class="lightbox-target" id="9">
+                    <a href="#9-home"><img src="img/multiblock007.jpg"></a>
+                </div>
+                
+                <a href="#10" id="10-home">
+                    <img src="img/proof005-thumb.jpg" width="100%">
+                </a>
+                <div class="lightbox-target" id="10">
+                    <a href="#10-home"><img src="img/proof005.jpg" height="100%"></a>
+                </div>
+                
+                <a href="#11" id="11-home">
+                    <img src="img/week8-9-hw-final1-thumb.jpg" width="100%">
+                </a>
+                <div class="lightbox-target" id="11">
+                    <a href="#11-home"><img src="img/week8-9-hw-final1.jpg"></a>
+                </div>
+                
+                <a href="#12" id="12-home">
+                    <img src="img/week8-9-hw-final2-thumb.jpg" width="100%">
+                </a>
+                <div class="lightbox-target" id="12">
+                    <a href="#12-home"><img src="img/week8-9-hw-final2.jpg" height="200%"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    empty, stops transition load bug in chrome-->
+    <script> </script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body></html>

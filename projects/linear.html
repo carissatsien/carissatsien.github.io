@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Linear Textures - Carissa Tsien</title>
+    <link rel="shortcut icon" type="image/jpg" href="../img/favicon.svg" />
+    <link href="../styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#9650;</button>
+    <!--Nav Bar-->
+    <div class="nav-container">
+        <h1 class="nav">Carissa Tsien</h1>
+        <ul>
+            <a class="underline" href="../index.html" id="current">Portfolio</a>
+        </ul>
+        <ul>
+            <a class="underline" href="../personal.html">Personal Work</a>
+        </ul>
+        <ul>
+            <a class="underline" href="../contact.html">Contact</a>
+        </ul>
+    </div>
+    
+    <!--Content-->
+
+    <div class="flex">
+        <div class="flex-container">
+            <div class="desc">
+                <h1>Linear Textures</h1>
+                <p>5 x 7 in. Booklet</p>
+                <!--
+                <br>
+                <p style="padding-left: 20px;">Lorem ipsum</p>
+-->
+            </div>
+
+            <div class="imagefirst">
+                <a class="" href="#0" id="0-home">
+                    <img src="../img/DSC_6141-t.jpg" width="100%">
+                    <div class="lightbox-target" id="0">
+                        <a href="#0-home"><img src="../img/DSC_6141-t.jpg"></a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="center">
+
+                <a href="#1" id="1-home">
+                    <img src="../img/DSC_6151-t.jpg" width="100%">
+                    <div class="lightbox-target" id="1">
+                        <a href="#1-home"><img src="../img/DSC_6151-t.jpg"></a>
+                    </div>
+                </a>
+
+                <a href="#2" id="2-home">
+                    <img src="../img/DSC_6158-t.jpg" width="100%">
+                    <div class="lightbox-target" id="2">
+                        <a href="#2-home"><img src="../img/DSC_6158-t.jpg"></a>
+                    </div>
+                </a>
+
+                <a href="#3" id="3-home">
+                    <img src="../img/booklet-03.jpg" width="100%">
+                </a>
+                <div class="lightbox-target" id="3">
+                    <a href="#3-home"><img src="../img/booklet-03.jpg"></a>
+                </div>
+
+                <a href="#4" id="4-home">
+                    <img src="../img/booklet-04.jpg" width="100%">
+                </a>
+                <div class="lightbox-target" id="4">
+                    <a href="#4-home"><img src="../img/booklet-04.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    empty, stops transition load bug in chrome-->
+    <script> </script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tiantan - Carissa Tsien</title>
+    <link rel="shortcut icon" type="image/jpg" href="../img/favicon.svg" />
+    <link href="../styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body onload="myFunction()">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#9650;</button>
+    <!--Nav Bar-->
+    <div class="nav-container">
+        <h1 class="nav">Carissa Tsien</h1>
+        <ul>
+            <a class="underline" href="../index.html" id="current">Portfolio</a>
+        </ul>
+        <ul>
+            <a class="underline" href="../personal.html">Personal Work</a>
+        </ul>
+        <ul>
+            <a class="underline" href="../contact.html">Contact</a>
+        </ul>
+    </div>
+    
+    <!--Content-->
+    <div class="flex">
+        <div class="flex-container">
+            <div class="desc">
+                <h1>Tiantan</h1>
+                <p>Visual Identity</p>
+                <!--
+                <br>
+                <p style="padding-left: 20px;">Lorem ipsum</p>
+-->
+            </div>
+            <div class="center">
+                <a class="" href="#0" id="0-home">
+                    <img src="../img/visual_identity-logo.svg" width="100%">
+                    <div class="lightbox-target" id="0">
+                        <a href="#0-home"><img src="../img/visual_identity-logo.svg" width="100%"></a>
+                    </div>
+                </a>
+                <a href="#1" id="1-home">
+                    <img src="../img/visual_identity-01.jpg" width="100%">
+                    <div class="lightbox-target" id="1">
+                        <a href="#1-home"><img src="../img/visual_identity-01.jpg"></a>
+                    </div>
+                </a>
+
+                <a href="#2" id="2-home">
+                    <img src="../img/visual_identity-03.jpg" width="100%">
+                    <div class="lightbox-target" id="2">
+                        <a href="#2-home"><img src="../img/visual_identity-03.jpg"></a>
+                    </div>
+                </a>
+
+                <a href="#3" id="3-home">
+                    <img src="../img/visual_identity-04.jpg" width="100%">
+                </a>
+                <div class="lightbox-target" id="3">
+                    <a href="#3-home"><img src="../img/visual_identity-04.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    empty, stops transition load bug in chrome-->
+    <script></script>
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body></html>

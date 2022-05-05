@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Concentric Icons - Carissa Tsien</title>
+    <link rel="shortcut icon" type="image/jpg" href="../img/favicon.svg"/>
+    <link href="../styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#9650;</button>
+    <!--Nav Bar-->
+    <div class="nav-container">
+        <h1 class="nav">Carissa Tsien</h1>
+        <ul>
+            <a class="underline" href="../index.html" id="current">Portfolio</a>
+        </ul>
+        <ul>
+            <a class="underline" href="../personal.html">Personal Work</a>
+        </ul>
+        <ul>
+            <a class="underline" href="../contact.html">Contact</a>
+        </ul>
+    </div>
+    
+    <!--Content-->
+    <div class="flex">
+        <div class="flex-container">
+            <div class="desc">
+                <h1>Concentric Icons</h1>
+                <p>Illustrator .ai, SVG</p>
+<!--
+                <br>
+                <p style="padding-left: 20px;">Lorem ipsum</p>
+-->
+            </div>
+            <div class="center">
+                
+                <a href="#1" id="1-home" style="width: 50vw;">
+                    <img src="../img/Icon%20Final-09.jpg" width="100%">
+                <div class="lightbox-target" id="1">
+                    <a href="#1-home"><img src="../img/Icon%20Final-09.jpg"></a>
+                </div>
+                </a>
+                
+                <a href="#2" id="2-home" style="width: 35vw;">
+                    <img src="../img/Icon%20Final-10.jpg" width="100%">
+                <div class="lightbox-target" id="2">
+                    <a href="#2-home"><img src="../img/Icon%20Final-10.jpg"></a>
+                </div>
+                </a>
+                
+                <a href="#3" id="3-home" style="width: 35vw;">
+                    <img src="../img/Icon%20Final-11.jpg" width="100%">
+                <div class="lightbox-target" id="3">
+                    <a href="#3-home"><img src="../img/Icon%20Final-11.jpg"></a>
+                </div>
+                </a>
+                    
+                <a href="#4" id="4-home" style="width: 35vw;">
+                    <img src="../img/Icon%20Final-12.jpg" width="100%">
+                <div class="lightbox-target" id="4">
+                    <a href="#4-home"><img src="../img/Icon%20Final-12.jpg"></a>
+                </div>
+                </a>
+                    
+                <a href="#5" id="5-home" style="width: 35vw;">
+                    <img src="../img/Icon%20Final-13.jpg" width="100%">
+                <div class="lightbox-target" id="5">
+                    <a href="#5-home"><img src="../img/Icon%20Final-13.jpg"></a>
+                </div>
+                </a>
+                    
+                <a href="#6" id="6-home" style="width: 35vw;">
+                    <img src="../img/Icon%20Final-14.jpg" width="100%">
+                <div class="lightbox-target" id="6">
+                    <a href="#6-home"><img src="../img/Icon%20Final-14.jpg"></a>
+                </div>
+                </a>
+                    
+                <a href="#7" id="7-home" style="width: 35vw;">
+                    <img src="../img/Icon%20Final-15.jpg" width="100%">
+                <div class="lightbox-target" id="7">
+                    <a href="#7-home"><img src="../img/Icon%20Final-15.jpg"></a>
+                </div>
+                </a>
+                    
+                <a href="#8" id="8-home" style="width: 35vw;">
+                    <img src="../img/Icon%20Final-16.jpg" width="100%">
+                <div class="lightbox-target" id="8">
+                    <a href="#8-home"><img src="../img/Icon%20Final-16.jpg"></a>
+                </div>
+                </a>
+                    
+                <a href="#9" id="9-home" style="width: 35vw;">
+                    <img src="../img/Icon%20Final-17.jpg" width="100%">
+                <div class="lightbox-target" id="9">
+                    <a href="#9-home"><img src="../img/Icon%20Final-17.jpg"></a>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--    empty, stops transition load bug in chrome-->
+    <script> </script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body></html>
